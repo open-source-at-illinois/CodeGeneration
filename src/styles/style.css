@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#chat-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#chat-box {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #000;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#chat-box div {
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 80%; /* prevents messages from getting too wide */
+    margin-bottom: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    clear: both; /* so each message div appears on own line*/
+}
+
+/* for changing the way "user" and "bot" messages look*/
+.user {
+    text-align: right;
+    background-color: #dcf8c6; /* Light green background for user messages */
+    float: right; /* align user messages to right */
+}
+
+.bot {
+    text-align: left;
+    background-color: #f1f1f1; /* Light grey background for bot messages */
+    float: left; /* align user messages to left*/
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    padding: 10px;
+    height: 50px; /* Initial height */
+    overflow-y: auto;
+}
+
+#send-btn {
+    width: 60px;
+    height: 38px;
+    margin-left: 10px;
+}
+
+/* header styles */
+#header-title {
+    text-align: center;
+}
